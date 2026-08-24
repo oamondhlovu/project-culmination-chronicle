@@ -148,12 +148,14 @@ function ReportHome() {
                   Explore the report
                 </Button>
                 <Button
-                  onClick={() => window.print()}
+                  asChild
                   variant="outline"
                   className="h-11 rounded-lg border-white/25 bg-transparent px-5 text-white hover:bg-white/10 hover:text-white"
                 >
-                  <Download className="h-4 w-4" />
-                  Print / save PDF
+                  <a href="/project-culmination-chronicle.pptx" download>
+                    <Download className="h-4 w-4" />
+                    Download PPTX
+                  </a>
                 </Button>
               </div>
             </div>
@@ -619,11 +621,13 @@ function ReportHome() {
                 </p>
               </div>
               <Button
-                onClick={() => window.print()}
+                asChild
                 className="h-11 shrink-0 bg-[#123f46] text-white hover:bg-[#1d5961]"
               >
-                <Download className="h-4 w-4" />
-                Save full report
+                <a href="/project-culmination-chronicle.pptx" download>
+                  <Download className="h-4 w-4" />
+                  Download PPTX
+                </a>
               </Button>
             </div>
           </div>
